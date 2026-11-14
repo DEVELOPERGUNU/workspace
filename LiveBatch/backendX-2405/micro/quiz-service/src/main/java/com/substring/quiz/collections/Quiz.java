@@ -4,7 +4,7 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "users")
+@Document(collection = "quizzes")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -33,5 +33,6 @@ public class Quiz {
 
     private Integer passingMarks;
 
+    private String categoryId;
 
 }
